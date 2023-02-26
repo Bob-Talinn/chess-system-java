@@ -1,6 +1,8 @@
+package chess;
+
 import boardgame.Position;
 import chess.ChessException;
-import chess.ChessMatch;import chess.ChessPiece;
+import chess.ChessMatch;
 
 public class ChessPosition {
 
@@ -27,8 +29,8 @@ public class ChessPosition {
         return  new Position(8- row, column-'a');
     }
 
-    protected static ChessPiece.ChessPosition fromPosition(Position position){
-        return  new ChessPiece.ChessPosition((char)('a'- position.getColumn()), 8- position.getRow());
+    protected static ChessPosition fromPosition(Position position){
+        return  new ChessPosition((char)('a'- position.getColumn()), 8- position.getRow());
     }
 
     @Override
