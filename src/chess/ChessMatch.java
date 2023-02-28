@@ -20,7 +20,9 @@ public class ChessMatch {
     private Color currentPlayer;
     private Board board;
     private boolean check;
+
     private boolean checkMate;
+
     private ChessPiece enPassantVulnerable;
     private ChessPiece promoted;
 
